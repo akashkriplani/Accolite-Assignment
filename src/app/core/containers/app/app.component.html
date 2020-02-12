@@ -23,7 +23,7 @@
       </g>
     </svg>
 
-    <span>{{ title }} app is running!</span>
+    <span>{{ title }} is running!</span>
 
     <svg id="rocket-smoke" alt="Rocket Ship Smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
       <path id="Path_40" data-name="Path 40" d="M644.6,141S143.02,215.537,147.049,870.207s342.774,201.755,342.774,201.755S404.659,847.213,388.815,762.2c-27.116-145.51-11.551-384.124,271.9-609.1C671.15,139.365,644.6,141,644.6,141Z" transform="translate(-147.025 -140.939)" fill="#f5f5f5"/>
@@ -36,5 +36,23 @@
   </svg>
 
 </div>
-
-<router-outlet></router-outlet>
+<div class="main-container">
+  <div class="steps-container">
+    <h2>Steps:</h2>
+    <mat-list role="list">
+      <mat-list-item role="listitem">1. Create a form group in the registration page</mat-list-item>
+      <mat-list-item role="listitem">2. Add first name control (string)</mat-list-item>
+      <mat-list-item role="listitem">3. Add last name control (string)</mat-list-item>
+      <mat-list-item role="listitem">4. Add age control (number)</mat-list-item>
+      <mat-list-item role="listitem">5. Ensure required validation for first name control</mat-list-item>
+      <mat-list-item role="listitem">6. Ensure required validation for age control</mat-list-item>
+      <mat-list-item role="listitem">7. Ensure postive number validation for age</mat-list-item>
+      <mat-list-item role="listitem">8. Ensure non decimal validaton for age </mat-list-item>
+      <mat-list-item role="listitem">9. Ensure 'e' is not valid for age</mat-list-item>
+      <mat-list-item role="listitem">10. Add submit button</mat-list-item>
+      <mat-list-item role="listitem">11. Ensure submit button is disabled unless form is valid</mat-list-item>
+      <mat-list-item role="listitem">12. Add reset button</mat-list-item>
+    </mat-list>
+  </div>
+  <router-outlet></router-outlet>
+</div>

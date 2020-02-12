@@ -102,6 +102,12 @@
     width: 1920px;
   }
 
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+  }
+
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './containers/app/app.component';
 import { RouterModule } from '@angular/router';
-
+import { MatListModule } from '@angular/material';
 
 
 @NgModule({
@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     RouterModule,
+    MatListModule
   ],
   exports: [AppComponent]
 })
