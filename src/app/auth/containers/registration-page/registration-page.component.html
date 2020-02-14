@@ -1,1 +1,27 @@
-<p>registration-page works!</p>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <div>
+    <mat-error *ngIf="profileForm.invalid">Form is invalid!</mat-error>
+  </div>
+
+  <div>
+    <label>
+      First Name:
+      <input type="text" formControlName="firstName">
+    </label>
+  </div>
+  <div>
+    <label>
+      Last Name:
+      <input type="text" formControlName="lastName">
+    </label>
+  </div>
+
+  <div>
+    <label>
+      Age:
+      <input type="number" formControlName="age">
+    </label>
+  </div>
+  <button type="button" (click)="resetForm()">Reset</button>
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>
